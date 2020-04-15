@@ -6,27 +6,27 @@
     <description>Recent content in Posts on Jane - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Apr 2020 17:18:48 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2020 22:03:22 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>如何用hugo搭建个人博客</title>
-      <link>http://localhost:1313/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Wed, 15 Apr 2020 17:18:48 +0800</pubDate>
+      <title>My First Post</title>
+      <link>http://localhost:1313/post/my-first-post/</link>
+      <pubDate>Wed, 15 Apr 2020 22:03:22 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
-      <description>如何用hugo搭建个人博客 1. 下载配置hugo.exe 从hugo官网Hogo下载hugo.exe并将hugo.exe所在路径添加至path中 使</description>
+      <guid>http://localhost:1313/post/my-first-post/</guid>
+      <description>我开通了博客 这是我的第一个博客</description>
     </item>
     
     <item>
-      <title>Firstblog</title>
-      <link>http://localhost:1313/post/firstblog/</link>
-      <pubDate>Wed, 15 Apr 2020 14:30:04 +0800</pubDate>
+      <title>如何用hugo搭建个人博客</title>
+      <link>http://localhost:1313/post/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Wed, 15 Apr 2020 17:18:48 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/firstblog/</guid>
-      <description>我的第一个博客 我的博客开通了</description>
+      <guid>http://localhost:1313/post/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>如何用hugo搭建个人博客 1. 下载配置hugo.exe 从hugo官网Hugo下载hugo.exe并将hugo.exe所在路径添加至path中 使</description>
     </item>
     
   </channel>
