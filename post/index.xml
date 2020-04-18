@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Jane - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Apr 2020 22:03:22 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2020 12:47:52 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HMTL入门笔记1</title>
+      <link>http://localhost:1313/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+      <pubDate>Sat, 18 Apr 2020 12:47:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+      <description>HTML入门笔记1 HTML的发明者 HTML由Tim Berners-Lee（李爵士）在1990年发明 同时 李爵士也发明了WWW（万维网） HTML HTTP URL H</description>
+    </item>
     
     <item>
       <title>My First Post</title>
