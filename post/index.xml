@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Jane - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 18 Apr 2020 12:47:52 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2020 09:56:53 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML常用标签</title>
+      <link>http://localhost:1313/post/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Mon, 20 Apr 2020 09:56:53 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>a标签 a标签用于编写链接，包括页面的跳转，页面标签的定位，邮件链接，手机端也可用于电话的跳转。 &amp;lt;a href=&amp;#34;//gogle.com&amp;#34; target=&amp;#34;_blank&amp;#34; download=&amp;#34;xxx&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;1.jpg&amp;#34; width=&amp;#34;100%&amp;#34; alt=&amp;#34;图片&amp;#34;</description>
+    </item>
     
     <item>
       <title>HMTL入门笔记1</title>
