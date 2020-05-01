@@ -6,10 +6,94 @@
     <description>Recent content on Jane - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 20 Apr 2020 09:56:53 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 11:56:45 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS动画</title>
+      <link>http://localhost:1313/post/css%E5%8A%A8%E7%94%BB/</link>
+      <pubDate>Fri, 01 May 2020 11:56:45 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/css%E5%8A%A8%E7%94%BB/</guid>
+      
+        <description>&lt;h2 id=&#34;css动画&#34;&gt;CSS动画&lt;/h2&gt;
+&lt;h1 id=&#34;浏览器渲染原理&#34;&gt;浏览器渲染原理&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;浏览器根据HTML代码生成DOM&lt;/li&gt;
+&lt;li&gt;浏览器根据CSS代码生成CSSOM&lt;/li&gt;
+&lt;li&gt;浏览器将HTML树和CSS树合并形成render tree&lt;/li&gt;
+&lt;li&gt;浏览器对页面进行布局&lt;/li&gt;
+&lt;li&gt;浏览器对页面进行绘制&lt;/li&gt;
+&lt;li&gt;浏览器将布局和绘制好的结果进行合成&lt;/li&gt;
+&lt;li&gt;输出页面&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;三种不同的样式更新渲染过程jscss更新样式&#34;&gt;三种不同的样式更新渲染过程（JS/CSS更新样式）&lt;/h1&gt;
+&lt;p&gt;HTML中不同的元素具有不同的更新渲染过程,可以在csstriggers.com查看元素的渲染过程&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;过程全部保留（改变样式-布局-绘制-合成-输出）&lt;/li&gt;
+&lt;li&gt;跳过绘制过程，在布局过程后直接进行合成（改变样式-布局-合成-输出）&lt;/li&gt;
+&lt;li&gt;跳过布局和绘制过程（改变样式-合成-输出）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;transform属性&#34;&gt;transform属性&lt;/h1&gt;
+&lt;p&gt;transform属性主要用来对于操纵元素平移、旋转、缩放和倾斜&lt;!-- raw HTML omitted --&gt;
+transform主要有四个值&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;transform:translate(1px,2px)|translatex(1px)|translatey(2px)&lt;/li&gt;
+&lt;li&gt;transform:scale(1,2)|scalex(1)|scale(2)&lt;/li&gt;
+&lt;li&gt;transform:skew(1deg,2deg)|skewx(1deg)|skewy(2deg)&lt;/li&gt;
+&lt;li&gt;transform:rotate(45deg)|rotatex(45deg)|rotatey(45deg)&lt;!-- raw HTML omitted --&gt;注：默认是围绕z轴旋转的，rotatex和rotatey是围绕二维x，y轴旋转的。&lt;!-- raw HTML omitted --&gt;
+小技巧：可以使用以下代码进行元素移动到中心的操作&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;top&lt;/span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;50&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;%;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;left&lt;/span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;50&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;%;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;transform&lt;/span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;translate&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-50&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;%,&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-50&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;%);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;transition制作css动画补充中间帧&#34;&gt;transition制作CSS动画（补充中间帧）&lt;/h1&gt;
+&lt;p&gt;如下示例transition有几个值，属性名 动画时长 动画方式 延迟时间&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-CSS&#34; data-lang=&#34;CSS&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;transition&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;margin-right&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;2s&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;ease-in-out&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;5s&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;使用方法&#34;&gt;使用方法&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;设定元素的动作，在不同的伪元素中切换或者通过JavaScript进行实现状态变化&lt;/li&gt;
+&lt;li&gt;在要补充中间帧的元素中加上transition属性
+&lt;!-- raw HTML omitted --&gt;
+注：1. 不是所有属性的变化都可以通过transition进行过渡的，例如display：block到none，一般使用visibility：visible到hidden。2. transition一般用来做一次变化的中间帧补充，多次动画的中间帧补充使用animation制作。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;animation制作css动画动画&#34;&gt;animation制作CSS动画（动画）&lt;/h1&gt;
+&lt;p&gt;animation如下示例&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;animation&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;3s&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;ease-in&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;1s&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;infinite&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;reverse&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;both&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;running&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;slidein&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;animation有如下几个值&#34;&gt;animation有如下几个值&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;动画时长&lt;/li&gt;
+&lt;li&gt;动画方式&lt;/li&gt;
+&lt;li&gt;动画延时&lt;/li&gt;
+&lt;li&gt;动画次数&lt;/li&gt;
+&lt;li&gt;动画方向&lt;/li&gt;
+&lt;li&gt;动画执行前后的样式&lt;/li&gt;
+&lt;li&gt;动画是否暂停&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;使用方法-1&#34;&gt;使用方法&lt;/h2&gt;
+&lt;p&gt;1， 定义关键帧（动画过程）&lt;!-- raw HTML omitted --&gt;
+两种方法，其中a,b,c,d为四种状态，xxx为动画名&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;@&lt;span style=&#34;color:#66d9ef&#34;&gt;keyframes&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;xxx&lt;/span&gt;{
+    &lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; 
+    {&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;a&lt;/span&gt;}
+    &lt;span style=&#34;color:#f92672&#34;&gt;to&lt;/span&gt;
+    {&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;b&lt;/span&gt;}
+}
+@&lt;span style=&#34;color:#66d9ef&#34;&gt;keyframs&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;xxx&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;｛&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;｛&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;｝&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;30&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;{&lt;span style=&#34;color:#f92672&#34;&gt;b&lt;/span&gt;}
+    &lt;span style=&#34;color:#f92672&#34;&gt;60&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;{&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;c&lt;/span&gt;}
+  &lt;span style=&#34;color:#f92672&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;00&lt;/span&gt;{&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;d&lt;/span&gt;}
+
+&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;｝&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;在要制作动画的元素中加上animation属性&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>HTML常用标签</title>
