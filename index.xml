@@ -6,10 +6,51 @@
     <description>Recent content on Jane - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 01 May 2020 11:56:45 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2020 18:19:25 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>浅析URL</title>
+      <link>http://localhost:1313/post/%E6%B5%85%E6%9E%90url/</link>
+      <pubDate>Tue, 05 May 2020 18:19:25 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%B5%85%E6%9E%90url/</guid>
+      
+        <description>&lt;h1 id=&#34;url的内容uniform-resource-locator&#34;&gt;URL的内容（Uniform Resource Locator）&lt;/h1&gt;
+&lt;p&gt;统一资源定位符的标准格式如下：&lt;!-- raw HTML omitted --&gt;
+[协议类型]://[服务器地址]:[端口号]/[资源层级UNIX文件路径][文件名]?[查询]#[片段ID] &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;服务器地址：指用来储存网页数据的服务器的ip地址或者域名&lt;/li&gt;
+&lt;li&gt;端口：服务器开放给用户访问的端口 一般HTTP协议的端口为80 HTTPS协议的端口为443&lt;!-- raw HTML omitted --&gt;计算机的端口一共有65535个，其中0~1023的1024个端口提供给系统使用，用户最好不要使用（可用管理员权限使用）&lt;/li&gt;
+&lt;li&gt;文件路径：文件的路径&lt;/li&gt;
+&lt;li&gt;[查询]#[片段ID]：查询参数，#后面的部分为锚点&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;dns域名系统domain-name-system&#34;&gt;DNS域名系统（Domain Name System）&lt;/h1&gt;
+&lt;p&gt;域名系统将域名和IP对应起来，就像电话簿中的名字和号码，域名体统允许用户输入名字来通话对应的号码，一个域名可以有IP对应，这叫做均衡负载，一个IP也可以有多个对应域名，这叫共享主机。
+&lt;!-- raw HTML omitted --&gt;以查询 zh.wikipedia.org 为例：
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;客户端发送查询报文&amp;quot;query zh.wikipedia.org&amp;quot;至DNS服务器，DNS服务器首先检查自身缓存，如果存在记录则直接&amp;gt;返回结果。
+如果记录老化或不存在，则：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;DNS服务器向根域名服务器发送查询报文&amp;quot;query zh.wikipedia.org&amp;rdquo;，根域名服务器返回&lt;!-- raw HTML omitted --&gt;顶级域&lt;!-- raw HTML omitted --&gt; .org 的权威域名服务器地址。&lt;/li&gt;
+&lt;li&gt;DNS服务器向 .org 域的权威域名服务器发送查询报文&amp;quot;query zh.wikipedia.org&amp;rdquo;，得到&lt;!-- raw HTML omitted --&gt;二级域&lt;!-- raw HTML omitted --&gt; .wikipedia.org 的权威域名服务器地址。&lt;/li&gt;
+&lt;li&gt;DNS服务器向 .wikipedia.org 域的权威域名服务器发送查询报文&amp;quot;query zh.wikipedia.org&amp;rdquo;，得到主机 zh 的A记录(&lt;!-- raw HTML omitted --&gt;三级域&lt;!-- raw HTML omitted --&gt;)，存入自身缓存并返回给客户端。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;ip协议internet-protocol&#34;&gt;IP协议（Internet Protocol）&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;IP协议的作用：用于定位主机的位置以及传输数据，为此IP定义了寻址方法和数据包的封装结构。&lt;/li&gt;
+&lt;li&gt;IP的寻址和路由：寻址就是如何将IP地址分配给各个终端节点，以及如何划分和组合子网。所有网络端点都需要路由，尤其是网际之间的路由器。路由器通常用内部网关协议和外部网关协议决定怎样发送IP数据包。&lt;!-- raw HTML omitted --&gt;内网ip由路由器分配，内网通过路由器-服务商服务器来获取外网IP以进行数据传输。&lt;/li&gt;
+&lt;li&gt;一般127.0.0.1表示自己的主机，或者也可以用localhost来进行访问，这个地址可以在C:\Windeows
+\System32\drivers\etc中的host文件进行配置&lt;/li&gt;
+&lt;li&gt;IP的版本：现在的国际互联网普遍的采用了IP协议。而现在正在网络中运行的IP协议是IPv4；IPv6为IPv4的后续的一个版本。互联网现在正慢慢的耗尽IP地址，而IPv6的出现解决了这个问题，与IPv4的32位的地址相比而言，IPv6拥有128位的地址空间，可以提供比前者多很多的地址。版本0至3不是被保留就是没有使用。而版本5被用于实验流传输协议。其他的版本也已经被分配了，通常是被用于实验的协议，而没有被广泛的应用。&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>CSS动画</title>

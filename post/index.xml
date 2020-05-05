@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Jane - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 01 May 2020 11:56:45 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2020 18:19:25 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>浅析URL</title>
+      <link>http://localhost:1313/post/%E6%B5%85%E6%9E%90url/</link>
+      <pubDate>Tue, 05 May 2020 18:19:25 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%B5%85%E6%9E%90url/</guid>
+      <description>URL的内容（Uniform Resource Locator） 统一资源定位符的标准格式如下：[协议类型]://[服务器地址]:[端口号]/[资源层级UNIX</description>
+    </item>
     
     <item>
       <title>CSS动画</title>
